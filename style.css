@@ -10,7 +10,7 @@ body {
   color: #1a1a1a;
   
   /* Подключаем фоновую картинку */
-  background-image: url('3.jpg');
+  background-image: url('3.JPG');
   background-size: cover;          /* Растягивает картинку на весь экран */
   background-position: center;     /* Центрирует изображение */
   background-repeat: no-repeat;    /* Запрещает повторение картинки */
