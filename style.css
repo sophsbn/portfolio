@@ -9,12 +9,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #1a1a1a;
   
-  /* Подключаем фоновую картинку */
   background-image: url('3.JPG');
-  background-size: cover;          /* Растягивает картинку на весь экран */
-  background-position: center;     /* Центрирует изображение */
-  background-repeat: no-repeat;    /* Запрещает повторение картинки */
-  background-attachment: fixed;    /* Зафиксирует фон при скролле (очень стильно смотрится) */
+  background-size: cover;          
+  background-position: center;    
+  background-repeat: no-repeat;   
+  background-attachment: fixed;    
 }
 img {
   width: 100%;
@@ -40,13 +39,12 @@ h1, h2, h3 {
   padding: 0 20px;
 }
 
-/* ВЕРХНЯЯ ЧАСТЬ (HERO) */
 .top_hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  margin-bottom: 90px; /* УВЕЛИЧЕНО РАССТОЯНИЕ МЕЖДУ СЕКЦИЯМИ */
+  margin-bottom: 90px; 
 }
 
 .hero_about {
@@ -68,16 +66,14 @@ h1, h2, h3 {
   margin-bottom: 22px;
 }
 
-/* УВЕЛИЧЕННЫЙ ШРИФТ ОПИСАНИЯ */
 .hero_description {
-  font-size: 17px; /* Было 15px */
+  font-size: 17px; 
   line-height: 1.65;
   color: #333333;
   margin-bottom: 24px;
   max-width: 560px;
 }
 
-/* ЧЕРНЫЕ ИКОНКИ СОЦСЕТЕЙ */
 .social_icons {
   display: flex;
   gap: 16px;
@@ -96,23 +92,21 @@ h1, h2, h3 {
   color: #4a5568;
 }
 
-/* СЕРЫЕ ПЛАШКИ ДЛЯ ДОКУМЕНТОВ (БЕЗ РАМОК) */
 .docs_container {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-/* Прозрачные плашки документов */
 .doc_chip {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 9px 18px;
-  background-color: rgba(255, 255, 255, 0.25); /* 25% белого — почти прозрачные */
-  backdrop-filter: blur(10px);                  /* Эффект матового стекла */
-  -webkit-backdrop-filter: blur(10px);          /* Для поддержки Safari/iPad */
-  border: 1px solid rgba(255, 255, 255, 0.4);   /* Легкая светлая гранка */
+  background-color: rgba(255, 255, 255, 0.25); 
+  backdrop-filter: blur(10px);                  
+  -webkit-backdrop-filter: blur(10px);          
+  border: 1px solid rgba(255, 255, 255, 0.4);   
   color: #1a1a1a;
   border-radius: 20px;
   font-size: 13.5px;
@@ -126,17 +120,14 @@ h1, h2, h3 {
   transform: translateY(-2px);
 }
 
-/* ФОТО СПРАВА */
 .hero_box {
   width: 100%;
   max-width: 420px;
   height: 360px;
   overflow: hidden;
   
-  /* ПОЛУПРОЗРАЧНАЯ РАМКА */
   border: 8px solid rgba(255, 255, 255, 0.223); 
   
-  /* Эффект матового стекла для самой рамки */
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   
@@ -152,7 +143,6 @@ h1, h2, h3 {
   animation: ava-bg 3s infinite alternate;
 }
 
-/* НИЖНЯЯ ЧАСТЬ (KENNTNISSE & TECH) */
 .skills_section {
   text-align: center;
 }
@@ -170,15 +160,14 @@ h1, h2, h3 {
   gap: 20px;
 }
 
-/* Прозрачные карточки навыков */
 .skill_card {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: rgba(255, 255, 255, 0.25); /* 25% белого */
-  backdrop-filter: blur(10px);                  /* Размытие фона под карточкой */
+  background-color: rgba(255, 255, 255, 0.25); 
+  backdrop-filter: blur(10px);                  
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.4);   /* Тонкий светлый контур */
+  border: 1px solid rgba(255, 255, 255, 0.4);  
   padding: 22px;
   border-radius: 14px;
   text-align: left;
@@ -210,7 +199,6 @@ h1, h2, h3 {
   line-height: 1.4;
 }
 
-/* KEYFRAMES */
 @keyframes ava-animate {
   0% {
     border-radius: 100% 0% 48% 52% / 72% 42% 58% 28%;
@@ -235,7 +223,6 @@ h1, h2, h3 {
   }
 }
 
-/* МОБИЛЬНАЯ АДАПТИВНОСТЬ */
 @media screen and (max-width: 900px) {
   .top_hero {
     flex-direction: column-reverse;
